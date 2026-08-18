@@ -35,7 +35,7 @@ export default function MarketingLayout({
         {children}
       </main>
       <footer style={{ padding: "2rem", background: "#f1f5f9", textAlign: "center" }}>
-        © 2026 OurProduct
+        Made with ❤️ by OurProduct
       </footer>
     </div>
   );
