@@ -1,5 +1,17 @@
 import Link from "next/link";
 
+/* 
+ * ROUTE GROUP: (marketing)
+ * ------------------------
+ * 1. The folder name is wrapped in parentheses, which tells Next.js this is a "Route Group".
+ * 2. Organizational Purpose: It allows us to group related routes (like about, pricing) 
+ *    in the codebase without affecting the URL structure. 
+ *    (e.g., the URL is `/pricing`, NOT `/marketing/pricing`).
+ * 3. Multiple Layouts Coexisting: Because this layout is inside the `(marketing)` folder,
+ *    it ONLY applies to the pages within this group. It does not affect pages in other 
+ *    groups like `(auth)`. This allows us to provide a unique Header and Footer just for 
+ *    the marketing pages!
+ */
 export default function MarketingLayout({
   children,
 }: {
